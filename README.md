@@ -1,8 +1,16 @@
+# Quick Start
+```
+go run main.go
+```
+
 # Attribute-based Encryption
 
 Attribute-based Encryption (ABE) is a technique that allows messages to be decrypted based on a series of attributes of a specific user, e.g. if they meet certain criteria.
 
-For example, if a business is making hiring plans, a specific document may be readable by directors in accounting, HR, or anyone with a C-level role. In this case, the policy would look like `(((level == directory AND (department == accounting) OR (department == HR)) OR level == C-level)`.
+For example, if a business is making hiring plans, a specific document may be readable by directors in accounting, HR, or anyone with a C-level role. In this case, the policy would look like: 
+```
+(((level == directory AND (department == accounting) OR (department == HR)) OR level == C-level)
+```
 
 In the above example, however, a single company can control the attributes of all of the users.
 
